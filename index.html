@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reading habbits</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Reading Habbits Survey Form</h1>
+        <p id="description">Thank you for telling us about your reading habbits</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <fieldset>
+                <legend>Identify yourself</legend>
+                <div class="input-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" id="name" name="name" class="block-input" required placeholder="Enter your name">
+                </div>
+                <div class="input-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" id="email" name="email" class="block-input" required placeholder="Enter your email">
+                </div> 
+                <div class="input-group">
+                    <label id="number-label" for="number">Age (optional)</label>
+                    <input type="number" id="number" name="age" class="block-input" placeholder="Your age" min="12" max="120">
+                </div> 
+            </fieldset>
+            <fieldset>
+                <legend>Your reading frequency</legend>
+                <p>How often do you read?</p>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="reading-frequency" id="everyday" value="everyday" checked>
+                        Everyday
+                    </label>
+                </div>
+               <div class="input-group">
+                    <label>
+                        <input type="radio" name="reading-frequency" id="weekly" value="weekly">
+                        Weekly
+                    </label>
+               </div>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="reading-frequency" id="monthly" value="monthly">
+                        Monthly
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="reading-frequency" id="rarely" value="rarely">
+                        Rarely
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+            <legend>Reading duration</legend>
+                <p>On average, how much time per day you spend reading?</p>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="reading-duration" id="minus-thirty" value="minus-thirty">
+                        Less than 30 minutes
+                    </label>
+                </div>
+               <div class="input-group">
+                    <label>
+                        <input type="radio" name="reading-duration" id="thirty-to-sixty" value="thirty-to-sixty" checked>
+                        Between 30 to 60 minutes
+                    </label>
+               </div>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="reading-duration" id="one-to-two" value="one-to-two">
+                        Between 1 to 2 hours
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="reading-duration" id="plus-two" value="plus-two">
+                        More than 2 hours
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reading motivation</legend>
+                <p id="">What is your reading motivation? (Choose all that apply)</p>
+                <div class="input-group">
+                    <label>
+                        <input type="checkbox" name="reading-motivation" value="pleasure">
+                        Pleasure
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="checkbox" name="reading-motivation" value="learning">
+                        Learning
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="checkbox" name="reading-motivation" value="relaxing">
+                        Relaxing
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="checkbox" name="reading-motivation" value="recomendation">
+                        Recomendations
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="checkbox" name="reading-motivation" value="other">
+                        Other
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Favorite format</legend>
+                <p>What is your favorite book format?</p>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="favorite-format" id="print" value="print" checked>
+                        Print
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label>
+                        <input type="radio" name="favorite-format" id="e-book" value="e-book">
+                        E-book
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Favorite Genre</legend>
+                <p>What is yor favorite reading genre?</p>
+                <select name="genre" id="dropdown" class="block-input" required>
+                    <option value="">Select one</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="romance">Romance</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="mistery">Mistery</option>
+                    <option value="sy-fy">Sy-fy</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+            <p>Do you have books recomendations for others? List them bellow</p>
+            <textarea name="comment" id="comment" class="block-input" placeholder="Your recomendations.." rows="5"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

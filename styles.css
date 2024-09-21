@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+}
+
+html,
+body {
+    min-height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url('./library.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    line-height: 1.5;
+    letter-spacing: 0.08rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+p, h1, legend {
+    cursor: default;
+}
+
+header {
+    text-align: center;
+}
+
+header > h1 {
+    font-weight: 900;
+}
+
+header > p {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+main {
+    margin: 1.5rem auto;
+    max-width: 50rem;
+    min-width: 18.75rem;
+    width: 80vw;
+}
+
+form {
+    width: 100%;
+    background-color: rgba(61, 28, 13, 0.65);
+    padding: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.7rem rgba(0, 0, 0, 0.115);
+    border-radius: 1rem;
+}
+
+fieldset {
+    padding: 0 1rem 2rem 1rem;
+    margin-bottom: 2rem;
+    border: 0.1875rem solid #583f3b;
+    border-radius: 0.7rem;
+}
+
+legend {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+input,
+select {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.1875rem solid #583f3b;
+    outline-color: #583f3b;
+}
+
+textarea {
+    font-size: 1rem;
+    padding: 0.5rem 0 0 0.5rem;
+    border: 0.1875rem solid #583f3b;
+}
+
+.block-input {
+    display: block;
+    width: 100%;
+}
+
+.input-group {
+    margin-top: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 0.125rem;
+}
+
+label {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+button {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 1.5rem 0 0.5rem 0;
+    background-color: #583f3b;
+    color: white;
+    font-weight: 700;
+    border: 0.1875rem solid #583f3b;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all ease-in-out;
+}
+
+button:active {
+    transform: translateY(0.3rem);
+}
